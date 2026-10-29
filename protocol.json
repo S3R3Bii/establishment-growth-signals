@@ -23,7 +23,7 @@
       "job_destruction_continuers",
       "net_job_creation"
     ],
-    "header_aliases": "Inspect exact header after commit; clarify exact aliases/flag representation before analytical projection",
+    "header_aliases": "All15 requested fields match the27-column official header exactly. Direct continuer counts are provided. Suppression flags appear in cells, not separate *_f columns; retain raw tokens and never reconstruct suppressed counts.",
     "first_year": 2010,
     "last_year": 2023,
     "sectors": [
@@ -48,7 +48,14 @@
       "81"
     ],
     "state_scope": "Fifty states and DC; exclude Puerto Rico and any totals/unknown-geography rows with explicit counts",
-    "raw_files_public": false
+    "raw_files_public": false,
+    "header_sha256": "c1d641dce9e4f68d29e3833a203d45b0e44c228c8af0d8bd70aa69f171991824",
+    "metadata_before": {
+      "Content-Length": "6200679",
+      "Last-Modified": "Thu, 25 Sep 2025 11:31:53 GMT",
+      "ETag": null,
+      "Content-Type": "text/csv"
+    }
   },
   "target": "Published annual job_creation_continuers / denom, in jobs per100 reported DHS-average employees. This is expanding-establishment net job gain, not hires, job vacancies or demonstrated labor shortage.",
   "baseline_years": [

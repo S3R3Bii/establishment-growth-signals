@@ -1,0 +1,43 @@
+{
+  "timestamp_utc": "2026-10-29T22:16:58.439795+00:00",
+  "url": "https://www2.census.gov/programs-surveys/bds/tables/time-series/2023/bds2023_st_sec.csv",
+  "status": 200,
+  "header": [
+    "year",
+    "st",
+    "sector",
+    "firms",
+    "estabs",
+    "emp",
+    "denom",
+    "estabs_entry",
+    "estabs_entry_rate",
+    "estabs_exit",
+    "estabs_exit_rate",
+    "job_creation",
+    "job_creation_births",
+    "job_creation_continuers",
+    "job_creation_rate_births",
+    "job_creation_rate",
+    "job_destruction",
+    "job_destruction_deaths",
+    "job_destruction_continuers",
+    "job_destruction_rate_deaths",
+    "job_destruction_rate",
+    "net_job_creation",
+    "net_job_creation_rate",
+    "reallocation_rate",
+    "firmdeath_firms",
+    "firmdeath_estabs",
+    "firmdeath_emp"
+  ],
+  "header_sha256": "c1d641dce9e4f68d29e3833a203d45b0e44c228c8af0d8bd70aa69f171991824",
+  "metadata": {
+    "Content-Length": "6200679",
+    "Last-Modified": "Thu, 25 Sep 2025 11:31:53 GMT",
+    "ETag": null,
+    "Content-Type": "text/csv"
+  },
+  "inspection": "Header only; no analytical values inspected",
+  "missing_requested_fields": []
+}

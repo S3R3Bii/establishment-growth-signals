@@ -1,0 +1,7 @@
+# Header and release scope before source projection
+
+The fixed design was locally committed at 6d41b96 before header inspection. The official State by Sector CSV has 27 fields; all 15 requested keys/counts/denominator fields match exactly, including direct job_creation_continuers. The header SHA-256 is retained with the official URL and initial Last-Modified/size metadata. No analytical values have been inspected. No alias or target substitution is needed.
+
+The linked codebook labels this the 2023 release and 2017 NAICS, with fifty states plus DC; Puerto Rico is separate. D/S/X/N are cell tokens, not independent flag columns in this CSV. Preserve all raw tokens; no suppression recovery or inferred hidden component. The general methodology page's current notice means its methods cannot be described as universally current. This study analyzes the specifically captured 2023 public release and its stated limitations.
+
+The target is the published continuer-establishment expansion count divided by the supplied DHS denominator. It is not all hires, vacancies, labor shortage or a private employer signal. BLS definitions are interpretive background; no incompatible quarterly BLS data are joined. Public source count accuracy, historical availability and current business conditions are not established by a header. Full source, independent parser, source-control and scientific gates remain pending.
