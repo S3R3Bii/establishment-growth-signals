@@ -1,0 +1,40 @@
+{
+  "selected_own_weight": "1/4",
+  "baseline_own_weight": "1",
+  "objective": "Equal-state-sector MAE on exported12-place target/prediction values",
+  "score_exact": "6435223032340389/3736000000000000",
+  "tie_rule": "Smaller own-history weight",
+  "all_candidates": [
+    {
+      "own_weight": "0",
+      "mae_exact": "1336623349388689/747200000000000",
+      "n": 3736,
+      "series": 934
+    },
+    {
+      "own_weight": "1/4",
+      "mae_exact": "6435223032340389/3736000000000000",
+      "n": 3736,
+      "series": 934
+    },
+    {
+      "own_weight": "1/2",
+      "mae_exact": "3228862168759203/1868000000000000",
+      "n": 3736,
+      "series": 934
+    },
+    {
+      "own_weight": "3/4",
+      "mae_exact": "6778898472131649/3736000000000000",
+      "n": 3736,
+      "series": 934
+    },
+    {
+      "own_weight": "1",
+      "mae_exact": "45947692871263/23350000000000",
+      "n": 3736,
+      "series": 934
+    }
+  ],
+  "held_analytical_outcomes_inspected": false
+}

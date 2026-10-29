@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "independent_paper_checks": 438,
+  "validation_rows": 5,
+  "primary_rows": 2,
+  "held_year_rows": 4,
+  "size_subset_rows": 3,
+  "sector_rows": 19,
+  "local_failure_rows": 5,
+  "composition_rows": 19,
+  "pdf_pages": 8,
+  "pdf_active_content_checks": 4,
+  "scope": "Independent displayed-table reconstruction, raw source component sums, direct primary error recomputation, qualifications, exact paper hashes and bounded PDF actions. Source rights and rendered layout reviewed separately."
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "validation",
+  "baseline_series": 934,
+  "years": [
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "cases": 3736,
+  "candidate_weights": [
+    "0",
+    "1/4",
+    "1/2",
+    "3/4",
+    "1"
+  ],
+  "prediction_rows": 18680,
+  "metric_rows": 4805,
+  "excluded_cases": 0,
+  "score_decimal_places": 12
+}

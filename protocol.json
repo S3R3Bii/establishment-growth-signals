@@ -110,5 +110,12 @@
   "availability": "2023 release provides revised historical cells, not contemporaneous vintages. Complete prior-year availability is idealized. No historical leakage-free or real-time feasibility gate is claimed; actual publication vintages remain unknown.",
   "separation": "Source inputs/quality visible without blinding. Freeze protocol, model, independent checker, source projection and validation choice before held analytical summaries. Do not tune on2020\u20132023 outcomes.",
   "scope": "Retrospective annual state-sector partial-pooling and establishment-composition study. Original quarterly, change-point, R and comprehensive hiring-pressure claims are outside this release. Python/SQL and exact arithmetic only; no R execution claim.",
-  "publication_scope": "Minimal public federal aggregate count/key/flag fields and original analysis. Full source files and manuals private. No employer/person microdata, suppression recovery, private contacts, credentials, clinical records, confidential business data or formal-publication projects. Source factual-data attribution and Census public-access rights assessed before publication."
+  "publication_scope": "Minimal public federal aggregate count/key/flag fields and original analysis. Full source files and manuals private. No employer/person microdata, suppression recovery, private contacts, credentials, clinical records, confidential business data or formal-publication projects. Source factual-data attribution and Census public-access rights assessed before publication.",
+  "scoring_precision": {
+    "decimal_places": 12,
+    "rounding": "nearest, ties to even",
+    "definition": "Compute target/prediction rates from exact source rationals; export each to12 decimal places in percentage-point units before scoring. Exact losses refer to these exported decimal values.",
+    "rationale": "Fixed untuned representational precision keeps deterministic aggregate arithmetic bounded across many unrelated source denominators. Quantization changes a per-case absolute loss by at most1e-12 percentage points relative to the same unrounded target/prediction. No scientific measurement-precision claim.",
+    "timing": "Declared after source-quality checks, before validation/model outcomes."
+  }
 }
