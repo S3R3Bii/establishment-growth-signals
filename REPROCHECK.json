@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "exact_csv_fields": 476500,
+  "selection_summary_and_verification_documents": 5,
+  "protected_dependencies": 26,
+  "scope": "Exact isolated replay relative to declared12-place scoring representation and captured source cells, not original information vintages or source truth."
+}

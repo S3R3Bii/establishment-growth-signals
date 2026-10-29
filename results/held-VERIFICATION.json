@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "stage": "held",
+  "exact_exported_fields_checked": 197891,
+  "independent_sql_lineage_checks": 196792,
+  "baseline_series": 934,
+  "cases": 3736,
+  "prediction_rows": 7472,
+  "metric_rows": 1922,
+  "scope": "Independent source-token interpretation, SQLite cohorts/lag/donor sums and rational/decimal scoring. Exactness is relative to declared12-place score representation; no source-truth, hires, causal or real-time claim."
+}

@@ -1,0 +1,19 @@
+{
+  "stage": "held",
+  "baseline_series": 934,
+  "years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "cases": 3736,
+  "candidate_weights": [
+    "1/4",
+    "1"
+  ],
+  "prediction_rows": 7472,
+  "metric_rows": 1922,
+  "excluded_cases": 0,
+  "score_decimal_places": 12
+}
