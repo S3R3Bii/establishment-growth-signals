@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "plotted_numeric_values": 84,
+  "coordinate_segment_checks": 114,
+  "year_annotations": 8,
+  "sector_labels": 19,
+  "failure_and_composition_counts": "PASS",
+  "export_hashes": 9,
+  "scope": "Finite source/result-to-artist checks plus separate rendered review; no accessibility-conformance claim."
+}
