@@ -1,0 +1,107 @@
+{
+  "study": "10",
+  "version": 1,
+  "source": {
+    "landing": "https://www.census.gov/data/datasets/time-series/econ/bds/bds-datasets.html",
+    "csv": "https://www2.census.gov/programs-surveys/bds/tables/time-series/2023/bds2023_st_sec.csv",
+    "release": "2023 BDS; released2025; retrospective snapshot",
+    "codebook": "https://www.census.gov/content/dam/Census/programs-surveys/business-dynamics-statistics/codebook-glossary.pdf",
+    "fields": [
+      "year",
+      "st",
+      "sector",
+      "emp",
+      "estabs",
+      "denom",
+      "estabs_entry",
+      "estabs_exit",
+      "job_creation",
+      "job_creation_births",
+      "job_creation_continuers",
+      "job_destruction",
+      "job_destruction_deaths",
+      "job_destruction_continuers",
+      "net_job_creation"
+    ],
+    "header_aliases": "Inspect exact header after commit; clarify exact aliases/flag representation before analytical projection",
+    "first_year": 2010,
+    "last_year": 2023,
+    "sectors": [
+      "11",
+      "21",
+      "22",
+      "23",
+      "31-33",
+      "42",
+      "44-45",
+      "48-49",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "61",
+      "62",
+      "71",
+      "72",
+      "81"
+    ],
+    "state_scope": "Fifty states and DC; exclude Puerto Rico and any totals/unknown-geography rows with explicit counts",
+    "raw_files_public": false
+  },
+  "target": "Published annual job_creation_continuers / denom, in jobs per100 reported DHS-average employees. This is expanding-establishment net job gain, not hires, job vacancies or demonstrated labor shortage.",
+  "baseline_years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015
+  ],
+  "validation_years": [
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "held_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "cohort": "State-sector series with all six2010\u20132015 baseline years containing published nonnegative numeric direct continuer-creation counts and positive denom, with denom>=1000 each baseline year. No suppression reconstruction; no outcome-rate threshold; require at least50 eligible series. Preserve all excluded keys/reasons.",
+  "predictor": "For target year t use only valid published t-1 direct continuer-creation and denom values. Own rate is100*JCC/denom. Cross-state prior is100*sum(JCC)/sum(denom) among other baseline-cohort states in the same sector with valid t-1 inputs; require at least5 donor states. Prediction is lambda*own+(1-lambda)*cross-state prior.",
+  "own_weights": [
+    "0",
+    "1/4",
+    "1/2",
+    "3/4",
+    "1"
+  ],
+  "baseline": "lambda=1 own prior-year rate",
+  "selection": "Choose one global lambda by equal-state-sector MAE over all valid2016\u20132019 target cases. Average within each series first, then across series. Exact score ties prefer smaller lambda (more pooling). Retain all candidates, counts and case exclusions. No optimizer or iterative fit.",
+  "small_cell_checks": {
+    "minimum_prior_denominator_subsets": [
+      1000,
+      5000,
+      25000
+    ],
+    "rationale": "Untuned size strata/subsets for reporting frozen-model sensitivity, not alternative models, publication permissions or validated operating thresholds."
+  },
+  "metrics": [
+    "Equal-state-sector MAE and MSE",
+    "RMSE as a derived display",
+    "Pooled denom-weighted MAE",
+    "All held year and sector errors",
+    "Paired per-series selected-minus-baseline MAE",
+    "Coverage and all input/label exclusions"
+  ],
+  "composition": "Use directly published total/birth/continuer job-creation and total/death/continuer destruction counts to describe the benchmark. Creation/destruction decompositions and rounded published-total consistency are diagnostics, not an assumption of unperturbed exact population counts. Do not infer suppressed components or force additivity. All flags and nonnumeric tokens remain explicit.",
+  "source_checks": "Hash and metadata identity; exact unique year/state/sector keys; independent standard-CSV and pandas C-parser selected-field agreement; full raw-token/flag inventory and state/sector/year coverage; independent SQL projection/count controls. Government disclosure-perturbed published cells are the target, not true microdata.",
+  "availability": "2023 release provides revised historical cells, not contemporaneous vintages. Complete prior-year availability is idealized. No historical leakage-free or real-time feasibility gate is claimed; actual publication vintages remain unknown.",
+  "separation": "Source inputs/quality visible without blinding. Freeze protocol, model, independent checker, source projection and validation choice before held analytical summaries. Do not tune on2020\u20132023 outcomes.",
+  "scope": "Retrospective annual state-sector partial-pooling and establishment-composition study. Original quarterly, change-point, R and comprehensive hiring-pressure claims are outside this release. Python/SQL and exact arithmetic only; no R execution claim.",
+  "publication_scope": "Minimal public federal aggregate count/key/flag fields and original analysis. Full source files and manuals private. No employer/person microdata, suppression recovery, private contacts, credentials, clinical records, confidential business data or formal-publication projects. Source factual-data attribution and Census public-access rights assessed before publication."
+}

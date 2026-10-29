@@ -1,0 +1,8 @@
+# Sources and limits
+
+- Census 2023 BDS datasets and official State by Sector download: https://www.census.gov/data/datasets/time-series/econ/bds/bds-datasets.html and https://www2.census.gov/programs-surveys/bds/tables/time-series/2023/bds2023_st_sec.csv . Snapshot/schema, rights and version checks precede analysis.
+- Release-specific variable/classification/flag definitions: https://www.census.gov/content/dam/Census/programs-surveys/business-dynamics-statistics/codebook-glossary.pdf . The2023 release uses2017 NAICS; do not merge other vintages without evidence.
+- Historical methodology and current notice: https://www.census.gov/programs-surveys/bds/documentation/methodology.html . Published statistics may be disclosure protected, rounded and revised; guidance is marked no longer current. No microdata truth or suppression recovery.
+- BLS established flow interpretation: https://www.bls.gov/opub/mlr/2001/09/art3full.pdf . Job flows measure net establishment changes, not all worker movements; no quarterly BLS/Census data merge.
+- Davis, Haltiwanger and Schuh (1996), Job Creation and Destruction: https://mitpress.mit.edu/9780262041522/job-creation-and-destruction/ . Established job-flow arithmetic is not a novel contribution.
+- Census public access/copyright scope: https://www2.census.gov/foia/ds_policies/ds027.pdf and https://www.census.gov/about/policies/citation.html . Minimal public federal factual aggregates and original work with attribution; full manuals, expressive source material and private business/person data excluded. No blanket license for third-party materials.
