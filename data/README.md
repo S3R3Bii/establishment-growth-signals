@@ -1,0 +1,7 @@
+# Captured public BDS aggregate projection
+
+The official 2023 State by Sector file contains 44,574 rows. The study retains 13,566 state-sector/year rows for 2010–2023, fifty states plus DC and nineteen 2017-NAICS sectors, with fifteen requested factual key/count/denominator fields. Raw source bytes and full manuals remain private; source URL, hashes and retrieval metadata are retained. Independent standard CSV and pandas C-parser selected-field agreement covers 668,610 source scalars. Independent SQLite exact count/scaled-sum controls cover 336 scalars.
+
+All source tokens remain as published, including disclosure/quality/structural/unavailable flags. The token inventory and year/key coverage are explicit. No hidden component is reconstructed, no flag becomes zero and no published value is denoised. The target uses the directly supplied continuer count and supplied DHS denominator. Counts reflect the captured disclosure-protected release; source accuracy, true employer activity and actual original publication vintages remain unknown.
+
+Recreate the minimal projection with `python src/project_source.py --private-root <directory-outside-this-repository>`. The script uses the documented public CSV download, not a credentialed API, retains raw bytes outside Git and refuses a changed source SHA when a manifest already exists. Header SHA, Last-Modified and Content-Length matched before/after; this bounded check is not universal immutability detection.
